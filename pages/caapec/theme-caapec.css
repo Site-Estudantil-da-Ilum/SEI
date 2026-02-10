@@ -1,5 +1,4 @@
 @import url('../../css/variables.css');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -155,8 +154,6 @@ html {
     line-height: 1.3;
 }
 
-/* Parte de Quick Nav */
-
 .navigation-menu {
     background-color: var(--Ilum-Lilac);
     height: 125;
@@ -281,10 +278,10 @@ html {
     align-items: center;    
     margin-top: 15px;
 }
-
-.sobre-nos-titulo {
+/* Titulo de uma secção */
+.seccao-titulo {
     font-family: 'Piedra', serif;
-    font-size: 55pt;
+    font-size: 60pt;
     color: #000000;
     margin-bottom: 30px;
     text-align: center;
@@ -304,4 +301,114 @@ html {
     line-height: 1.2;
     color: #000000;
     text-align: justify;
+}
+
+/* Secção dos Cargos  */
+
+.seccao-cargos {
+    width: 100%;
+    min-height: 558px;
+    background-image: url('img/fundo cargos.png');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: flex-start;   
+    margin-top: -312px;
+    padding-top: 10px;
+}
+
+.cargos-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cargos-carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.cargos-conteudo-wrapper {
+    align-items: center;
+    gap: 50px;
+    transition: opacity 0.3s ease;
+}
+
+.cargo-item {
+    display: none; 
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.cargo-item.ativo {
+    display: flex;
+}
+
+.cargo-card-box {
+    width: 350px;
+    height: 300px;
+    flex-shrink: 0;
+    border: 4px solid var(--Ilum-Purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cargo-card-box h3 {
+    font-family: 'Neuton', serif;
+    font-size: 38pt;
+    color: var(--Ilum-Purple);
+    font-weight: 800;
+}
+
+.cargo-descricao {
+    max-width: 620px;
+    width: 100%;
+}
+
+.cargo-descricao p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14pt;
+    line-height: 1.2;
+    color: #1E1E1E;
+    text-align: justify;
+}
+
+.seta-nav {
+    background: none;
+    border: none;
+    font-size: 50pt;
+    cursor: pointer;
+    color: #000000;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.seta-nav:hover {
+    transform: scale(1.2);
+    color: var(--Ilum-Purple);
+}
+
+.seccao-membros {
+    width: 100%;
+    min-height: 700px;
+    background-image: url('img/fundo membros.png');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: flex-start;   
+    padding-top: 10px;
+}
+
+.membros-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
